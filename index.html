@@ -1,28 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Assignment 2</title>
+    <title>Document</title>
     <style>
-        table{
-            align-self: center;
-            margin-left: 10%;
+        body{
+            height: 100%;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            background-color: rgb(41, 140, 221);
+            color: white;
+        }
+        .main{
+            margin: auto;
+        }
+        .main div{
+            float: left;
+            padding: 20px;
+            margin-right: 10px;
+            text-align: center;
         }
         img{
             border-radius: 50%; 
             max-width: 250px;
         }
+        table, td{
+            border: 1px solid whitesmoke;
+        }
     </style>
 </head>
 
 <body>
-    <table style="margin-top: 10px;">
-        <tr>
-            <td><img src="image.png" style="margin-right: 20px;" alt="My image"></td>
-            <td>
-                <p><b>Name:</b> Pulkit Kumar Agarwal</p>
-                <p><b>Branch:</b> Computer Science and Engineering </p>
-            </td>
-        </tr>
-    </table>
+    <div class="main">
+        <div class="left">
+            <img src="/image.png" alt="">
+            <h4>Pulkit Kumar Agarwal</h4>
+        </div>
+        <div class="right">
+            <div class="details">
+                <h3>Student Details</h3>
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td>:</td>
+                        <td>Pulkit Kumar Agarwal</td>
+                    </tr>
+                    <tr>
+                        <td>Roll</td>
+                        <td>:</td>
+                        <td>2006036</td>
+                    </tr>
+                    <tr>
+                        <td>Branch</td>
+                        <td>:</td>
+                        <td>Computer Science and Engineering</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
